@@ -17,9 +17,9 @@ jobs:
     - name: Set up MSBuild
       uses: microsoft/setup-msbuild@v1.3.1
 
-    - - name: Build DLL
-  shell: cmd
-  run: |
+    -- name: Build DLL
+        shell: cmd
+        run: |
     "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\\vcvars64.bat" && ^
     mkdir build && ^
     cl /LD GCodeViewer.cpp /Fe:build\\GCodeViewer.dll /link /DEF:GCodeViewer.def
