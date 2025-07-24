@@ -23,7 +23,7 @@ jobs:
         cl /LD GCodeViewer.cpp /Fe:build\\GCodeViewer.dll /link /DEF:GCodeViewer.def
 
     - name: Upload DLL Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: GCodeViewer64
         path: build/GCodeViewer.dll
