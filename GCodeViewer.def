@@ -1,0 +1,8 @@
+LIBRARY GCodeViewer
+EXPORTS
+    pluginInit
+    pluginCleanUp
+    commandMenuInit
+    getFuncsArray
+    beNotified
+    messageProc
